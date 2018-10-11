@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks">
-  <uml:Model xmi:id="_9M8PkMgREeiZpcdp28c1Mg" name="WaterDistiller">
+  <uml:Model xmi:id="_9M8PkMgREeiZpcdp28c1Mg" name="WaterDistiller" visibility="package">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_9U_YUMgREeiZpcdp28c1Mg">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -8,7 +8,7 @@
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
     <packagedElement xmi:type="uml:Model" xmi:id="_a8Oi8MgSEeiZpcdp28c1Mg" name="bdd">
-      <packagedElement xmi:type="uml:Class" xmi:id="_mrIaEMgSEeiZpcdp28c1Mg" name="Distiller">
+      <packagedElement xmi:type="uml:Class" xmi:id="_mrIaEMgSEeiZpcdp28c1Mg" name="Distiller" visibility="package">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wDO1EMgWEeiZpcdp28c1Mg" name="Distiller" visibility="public">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_dGs3o8gsEeiDWLY7SJSaAQ" name="valve" type="_UYc6oMgXEeiZpcdp28c1Mg" aggregation="composite" association="_dGs3oMgsEeiDWLY7SJSaAQ">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dGs3pMgsEeiDWLY7SJSaAQ"/>
@@ -27,19 +27,19 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_UYc6oMgXEeiZpcdp28c1Mg" name="Valve"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_ZPkakMgXEeiZpcdp28c1Mg" name="Heat Exchanger"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_dGs3oMgsEeiDWLY7SJSaAQ" memberEnd="_dGs3o8gsEeiDWLY7SJSaAQ _dGs3psgsEeiDWLY7SJSaAQ">
+      <packagedElement xmi:type="uml:Association" xmi:id="_dGs3oMgsEeiDWLY7SJSaAQ" name="Drain" memberEnd="_dGs3o8gsEeiDWLY7SJSaAQ _dGs3psgsEeiDWLY7SJSaAQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dGs3ocgsEeiDWLY7SJSaAQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dGs3osgsEeiDWLY7SJSaAQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_dGs3psgsEeiDWLY7SJSaAQ" name="distiller" type="_wDO1EMgWEeiZpcdp28c1Mg" association="_dGs3oMgsEeiDWLY7SJSaAQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_h2SMMMgsEeiDWLY7SJSaAQ" memberEnd="_h2b9MsgsEeiDWLY7SJSaAQ _h2b9NcgsEeiDWLY7SJSaAQ">
+      <packagedElement xmi:type="uml:Association" xmi:id="_h2SMMMgsEeiDWLY7SJSaAQ" name="Evaporator" memberEnd="_h2b9MsgsEeiDWLY7SJSaAQ _h2b9NcgsEeiDWLY7SJSaAQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h2b9MMgsEeiDWLY7SJSaAQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h2b9McgsEeiDWLY7SJSaAQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_h2b9NcgsEeiDWLY7SJSaAQ" name="distiller" type="_wDO1EMgWEeiZpcdp28c1Mg" association="_h2SMMMgsEeiDWLY7SJSaAQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_jmgzsMgsEeiDWLY7SJSaAQ" memberEnd="_jmgzs8gsEeiDWLY7SJSaAQ _jmqkscgsEeiDWLY7SJSaAQ">
+      <packagedElement xmi:type="uml:Association" xmi:id="_jmgzsMgsEeiDWLY7SJSaAQ" name="Condenser" memberEnd="_jmgzs8gsEeiDWLY7SJSaAQ _jmqkscgsEeiDWLY7SJSaAQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jmgzscgsEeiDWLY7SJSaAQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jmgzssgsEeiDWLY7SJSaAQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
